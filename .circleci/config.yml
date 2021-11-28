@@ -1,0 +1,78 @@
+version: 2.1
+
+workflows:
+  version: 2
+  rust:
+    jobs:
+      - check:
+          context: [aws]
+      - test:
+          context: [aws]
+      - udeps:
+          context: [aws]
+      - makepress-orb/release-please-single:
+          context: [lulubot]
+      - build-and-publish-main:
+          context: [aws]
+          requires:
+            - check
+            - test
+            - udeps
+            - makepress-orb/release-please-single
+          filters:
+            branches:
+              only:
+                - main
+      - build-and-publish-tagged:
+          context: [aws]
+          requires:
+            - check
+            - test
+            - udeps
+            - makepress-orb/release-please-single
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+jobs:
+  check:
+    executor: makepress-orb/rust
+    steps:
+      - checkout
+      - makepress-orb/with-rust:
+          steps:
+            - run: just check
+  test:
+    executor: makepress-orb/rust
+    steps:
+      - checkout
+      - makepress-orb/with-rust:
+          steps:
+            - run: just test
+  udeps:
+    executor: makepress-orb/rust
+    steps:
+      - checkout
+      - makepress-orb/with-rust:
+          steps:
+            - run: just udeps
+  build-and-publish-main:
+    executor: aws-ecr/default
+    steps:
+      - aws-ecr/build-and-push-image:
+          repo: ktra
+          create-repo: true
+          dockerfile: docker/ktra.Dockerfile
+  build-and-publish-tagged:
+    executor: aws-ecr/default
+    steps:
+      - aws-ecr/build-and-push-image:
+          repo: ktra
+          create-repo: true
+          tag: ${CIRCLE_TAG/v/''}
+          dockerfile: docker/ktra.Dockerfile
+
+orbs:
+  makepress-orb: makepress/makepress-orb@2.1.0
+  aws-ecr: circleci/aws-ecr@7.3.0
