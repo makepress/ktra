@@ -1086,9 +1086,9 @@ dependencies = [
 
 [[package]]
 name = "mongodb"
-version = "2.0.2"
+version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a2ac4ac0fb3a154a59e47cf202e41060e8af93d16b84434cea0755a845da9bd1"
+checksum = "bacb6f8cee6bf010d7bc57550d859f6a4ffe255eb8c9a7014637fe988eaece64"
 dependencies = [
  "async-trait",
  "base64",
@@ -1109,6 +1109,7 @@ dependencies = [
  "percent-encoding",
  "rand",
  "rustls",
+ "rustls-pemfile",
  "serde",
  "serde_bytes",
  "serde_with",
@@ -1531,6 +1532,15 @@ dependencies = [
  "ring",
  "sct",
  "webpki",
+]
+
+[[package]]
+name = "rustls-pemfile"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5eebeaeb360c87bfb72e84abdb3447159c0eaececf1bef2aecd65a8be949d1c9"
+dependencies = [
+ "base64",
 ]
 
 [[package]]
