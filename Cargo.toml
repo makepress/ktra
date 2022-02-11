@@ -22,7 +22,7 @@ db-redis = ["redis"]
 db-mongo = ["mongodb", "bson"]
 
 [dependencies]
-tokio = { version = "1.15", features = ["macros", "rt-multi-thread", "fs", "io-util"] }
+tokio = { version = "1.16", features = ["macros", "rt-multi-thread", "fs", "io-util"] }
 warp = "0.3"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
@@ -42,7 +42,7 @@ clap = "2.34"
 async-trait = "0.1"
 
 reqwest = { version = "0.11", features = ["gzip", "brotli"], optional = true }
-tokio-util = { version = "0.6", features = ["io"], optional = true }
+tokio-util = { version = "0.7", features = ["io"], optional = true }
 
 rand = { version = "0.8", optional = true }
 rust-argon2 = { version = "0.8", optional = true }
