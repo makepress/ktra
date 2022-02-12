@@ -11,4 +11,4 @@ test:
 
 # Finds unused dependencies
 udeps:
-    RUSTC_BOOTSTRAP=1 cargo udeps --all-targets --backend depinfo
+    RUSTC_BOOTSTRAP=1 cargo udeps --all-targets --backend depinfo --locked
