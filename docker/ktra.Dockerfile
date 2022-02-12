@@ -2,7 +2,7 @@ FROM rust:1.57.0 as builder
 
 ARG DB="db-sled"
 ARG MIRRORING="crates-io-mirroring"
-COPY --chown=rust:rust . /build
+COPY . /build
 WORKDIR /build
 RUN cargo build --release --no-default-features --features=secure-auth,${DB},${MIRRORING}
 
