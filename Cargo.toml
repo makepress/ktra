@@ -34,7 +34,7 @@ semver = { version = "1.0", features = ["serde"] }
 url = { version = "2.2", features = ["serde"] }
 anyhow = "1.0"
 thiserror = "1.0"
-git2 = "0.13"
+git2 = "0.14"
 bytes = "1.1"
 sha2 = "0.10"
 toml = "0.5"
