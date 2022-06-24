@@ -72,5 +72,5 @@ jobs:
           dockerfile: docker/ktra.Dockerfile
 
 orbs:
-  makepress-orb: makepress/makepress-orb@2.4.0
+  makepress-orb: makepress/makepress-orb@2.4.1
   aws-ecr: circleci/aws-ecr@7.3.0
