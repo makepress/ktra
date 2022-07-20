@@ -35,7 +35,7 @@ url = { version = "2.2", features = ["serde"] }
 anyhow = "1.0"
 thiserror = "1.0"
 git2 = "0.14"
-bytes = "1.1"
+bytes = "1.2"
 sha2 = "0.10"
 toml = "0.5"
 clap = "2.34"
