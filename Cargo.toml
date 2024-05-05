@@ -37,7 +37,7 @@ thiserror = "1.0"
 git2 = "0.14"
 bytes = "1.4"
 sha2 = "0.10"
-toml = "0.5"
+toml = "0.8"
 clap = "2.34"
 async-trait = "0.1"
 
