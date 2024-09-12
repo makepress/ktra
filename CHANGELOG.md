@@ -1,5 +1,51 @@
 # Changelog
 
+### [0.5.3](https://www.github.com/makepress/ktra/compare/v0.5.2...v0.5.3) (2024-09-12)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance tracing packages ([7ed6336](https://www.github.com/makepress/ktra/commit/7ed6336805a645eea80e99d1d42012dfc09d8141))
+* **deps:** update actions/checkout action to v3 ([5e797f8](https://www.github.com/makepress/ktra/commit/5e797f8623f99529630d006d49fdde3967168f70))
+* **deps:** update aws-ecr orb to v8 ([fb47649](https://www.github.com/makepress/ktra/commit/fb47649596278e5496736be844b5ccc8e8d02ad6))
+* **deps:** update dependency rust to v1.57.0 ([ad77cd0](https://www.github.com/makepress/ktra/commit/ad77cd0298727f061b9bec04242a678b1deb67f0))
+* **deps:** update dependency rust to v1.58.1 ([7e80700](https://www.github.com/makepress/ktra/commit/7e807002660064f3c62354ad1593e5a64f3af766))
+* **deps:** update docker/build-push-action action to v3 ([780f837](https://www.github.com/makepress/ktra/commit/780f837e5a51103e2c5636e49fc1b4ce4dd36558))
+* **deps:** update docker/build-push-action action to v4 ([a857441](https://www.github.com/makepress/ktra/commit/a857441d97ef38658300c854c5734c2145c8c74c))
+* **deps:** update docker/login-action action to v2 ([f9b44ce](https://www.github.com/makepress/ktra/commit/f9b44cec8f6568e8563f34bc685b0d9cdb10f4b1))
+* **deps:** update docker/setup-buildx-action action to v2 ([26efea9](https://www.github.com/makepress/ktra/commit/26efea94552c1400cfcbba1011d8557a15e59504))
+* **deps:** update makepress-orb orb to v2.2.0 ([cfb4077](https://www.github.com/makepress/ktra/commit/cfb40771c757d534482a98c4aa8436adf7366168))
+* **deps:** update makepress-orb orb to v2.3.0 ([4f15140](https://www.github.com/makepress/ktra/commit/4f1514014d37a19e3a784523b69917b61a4732c4))
+* **deps:** update makepress-orb orb to v2.4.0 ([3f5cc40](https://www.github.com/makepress/ktra/commit/3f5cc4036fee367dca3660613e4b8bad7c4d4bc4))
+* **deps:** update makepress-orb orb to v2.4.1 ([3411a6a](https://www.github.com/makepress/ktra/commit/3411a6a67ec0c0be29973623b8a0d05baef1f019))
+* **deps:** update rust crate bson to 2.1.0 ([15e51c1](https://www.github.com/makepress/ktra/commit/15e51c1a15a37fed4b4e5092577481bb45fb095c))
+* **deps:** update rust crate bson to 2.2.0 ([d1a4576](https://www.github.com/makepress/ktra/commit/d1a45761c6bccca802d2d28c6b8280e0dff9a905))
+* **deps:** update rust crate bson to 2.3.0 ([b216e62](https://www.github.com/makepress/ktra/commit/b216e62cd96bb4cbb4ad88a360bef7fd9ed4d038))
+* **deps:** update rust crate bson to 2.4.0 ([49acd74](https://www.github.com/makepress/ktra/commit/49acd74c4192e6eb4b0f6f610176d68d97d927a5))
+* **deps:** update rust crate bson to 2.5.0 ([494faba](https://www.github.com/makepress/ktra/commit/494faba5edad96d44289719aab3b23d10820f052))
+* **deps:** update rust crate bytes to 1.2 ([e151bce](https://www.github.com/makepress/ktra/commit/e151bcec894008f544e5e256f26b8c3fda6a10d8))
+* **deps:** update rust crate bytes to 1.3 ([d598333](https://www.github.com/makepress/ktra/commit/d5983339e1d6741db1f7c6e84c12d3269189822a))
+* **deps:** update rust crate bytes to 1.4 ([1fa6bf7](https://www.github.com/makepress/ktra/commit/1fa6bf7696f9ff9f0b822ff5bb5973ca3799fe5c))
+* **deps:** update rust crate git2 to 0.14 ([685407e](https://www.github.com/makepress/ktra/commit/685407e05744dc61036888356be6794d740993ba))
+* **deps:** update rust crate mongodb to 2.1 ([4844fff](https://www.github.com/makepress/ktra/commit/4844fffa3bd628792d8653d5e79c660daaf9d9d8))
+* **deps:** update rust crate mongodb to 2.3 ([cc3200b](https://www.github.com/makepress/ktra/commit/cc3200b8bccbbdd05e0eea5b93d589e2a92f4ec3))
+* **deps:** update rust crate redis to 0.22 ([f3f9233](https://www.github.com/makepress/ktra/commit/f3f9233fce38322e94f3262f5181e58344e281fa))
+* **deps:** update rust crate rust-argon2 to v1 ([d03f12a](https://www.github.com/makepress/ktra/commit/d03f12a1ccd915ff796e606d02674f81a6cba676))
+* **deps:** update rust crate sha2 to 0.10 ([f5c5638](https://www.github.com/makepress/ktra/commit/f5c5638ea9b3a6021ce68755aa28ab9911798a2c))
+* **deps:** update rust crate tokio to 1.15 ([7fe60ae](https://www.github.com/makepress/ktra/commit/7fe60ae2deb7ef13acfaf2d5c63f82b111fe0b10))
+* **deps:** update rust crate tokio to 1.17 ([bb39ef1](https://www.github.com/makepress/ktra/commit/bb39ef194c9b7581abedd9d4ee5717d14dafc6f4))
+* **deps:** update rust crate tokio to 1.18 ([3aabe67](https://www.github.com/makepress/ktra/commit/3aabe6775336a329b7d0923586156d6c6aaaae83))
+* **deps:** update rust crate tokio to 1.19 ([fff7f8b](https://www.github.com/makepress/ktra/commit/fff7f8bff6a9d618340fbf26896e170ede910524))
+* **deps:** update rust crate tokio to 1.20 ([a6ddfea](https://www.github.com/makepress/ktra/commit/a6ddfea141214ec381616547e742b80a4c598ae0))
+* **deps:** update rust crate tokio to 1.21 ([e8859d0](https://www.github.com/makepress/ktra/commit/e8859d0ee41ae6da930f1a966f5758d6dd838b62))
+* **deps:** update rust crate tokio to 1.22 ([ef5e8ef](https://www.github.com/makepress/ktra/commit/ef5e8efb6c1b9592cb4b2da0ad0d05d86557d5ca))
+* **deps:** update rust crate tokio to 1.23 ([1ea5a2c](https://www.github.com/makepress/ktra/commit/1ea5a2c2c9ebb8825df3be43f357fd6052ef83fb))
+* **deps:** update rust crate tokio to 1.24 ([d866a73](https://www.github.com/makepress/ktra/commit/d866a733bc221227d17f45adcf209a9216246f47))
+* **deps:** update rust crate tokio to 1.25 ([76cc236](https://www.github.com/makepress/ktra/commit/76cc236b69d801c97c547452a0f40ef51234de10))
+* **deps:** update rust crate url to 2.3 ([89eaa04](https://www.github.com/makepress/ktra/commit/89eaa04ae3dee599c8a5aa8081a5da2aabd9778e))
+* **deps:** update tokio packages ([d7e8d2a](https://www.github.com/makepress/ktra/commit/d7e8d2a69d09a637c36de379fc928960de561ac8))
+* Update dockerfile ([785cb6d](https://www.github.com/makepress/ktra/commit/785cb6d4ad9479f32f4232435c6331c9cc1f8e2e))
+
 ### [0.5.2](https://www.github.com/makepress/ktra/compare/v0.5.1...v0.5.2) (2021-12-01)
 
 
